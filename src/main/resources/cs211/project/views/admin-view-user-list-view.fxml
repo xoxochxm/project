@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768" prefWidth="1024" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.AdminViewUserListController">
+   <children>
+      <Button layoutX="707.0" layoutY="60.0" mnemonicParsing="false" onAction="#onEditPasswordButtonClick" text="Edit Password">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <TableView fx:id="usersTableView" layoutX="87.0" layoutY="109.0" prefHeight="550.0" prefWidth="850.0">
+        <columns>
+          <TableColumn prefWidth="67.0" text="No." />
+          <TableColumn prefWidth="261.0" text="Username" />
+            <TableColumn prefWidth="261.0" text="Name" />
+            <TableColumn prefWidth="261.0" text="Latest  Use" />
+        </columns>
+      </TableView>
+      <Button layoutX="848.0" layoutY="59.0" mnemonicParsing="false" onAction="#onLogOutBtnClick" text="Log Out">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
